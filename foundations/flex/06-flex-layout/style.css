@@ -1,11 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
-  height: 100vh;
+  display: flex;
+  flex-direction: column; 
   margin: 0;
+  min-height: 100vh;
   overflow: hidden;
   font-family: Roboto, sans-serif;
 }
+
+ul {
+  /* this removes the dots on the list items*/
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  gap: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+  font-size: 14px;
+}
+
+.content{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.content .buttons{
+  padding: 16px;
+  gap: 8px;
+}
+
+.content .buttons button{
+  border: 5px solid #eee;
+} 
 
 img {
   width: 600px;
@@ -23,4 +57,26 @@ input {
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 16px;
+}
+
+.footer {
+  display: flex;
+  background: #eee;
+  justify-content: space-between;
+  padding: 8px 16px;
+}
+
+.left-links{
+  display: flex;
+  gap: 16px;
+}
+
+.right-links{
+  display: flex;
 }
